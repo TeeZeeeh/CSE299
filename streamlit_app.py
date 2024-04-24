@@ -39,7 +39,7 @@ from st_circular_progress import CircularProgress
 
 my_circular_progress = CircularProgress(
     label="The Ejection Fraction",
-    value=ef,
+    value=78,
     key="my_circular_progress").st_circular_progress()
 
 if ef > 70:
