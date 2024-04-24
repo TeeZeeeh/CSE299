@@ -1,3 +1,3 @@
 runOnSave = true
-showErrorDetails = true
+showErrorDetails = false
 folderWatchBlacklist = []
