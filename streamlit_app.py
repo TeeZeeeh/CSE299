@@ -16,17 +16,10 @@ with st.status("Calculating the Ejection Fraction..."):
     st.write("Semantically Segmenting the Left-Ventricle...")
     time.sleep(2)
     
-    DEFAULT_WIDTH = 80
-    VIDEO_DATA = "c6faad01-66db-4275-b246-892dec7a4067.mp4"
+    col1, col2, col3 = st.columns(3)
+    with col2:
+        st.video("c6faad01-66db-4275-b246-892dec7a4067.mp4")
 
-    st.set_page_config(layout="wide")
-    width = st.sidebar.slider(
-    label="Width", min_value=0, max_value=100, value=DEFAULT_WIDTH, format="%d%%")
-    width = max(width, 0.01)
-    side = max((100 - width) / 2, 0.01)
-    _, container, _ = st.columns([side, width, side])
-    container.video(data=VIDEO_DATA)
-    
     st.write("Predicting the Ejection Fraction...")
     time.sleep(1)
     st.write("Assessing Cardiomyopathy...")
