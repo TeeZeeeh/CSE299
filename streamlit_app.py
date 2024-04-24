@@ -15,6 +15,7 @@ with st.status("Calculating the Ejection Fraction..."):
     time.sleep(2)
     st.write("Semantically Segmenting the Left-Ventricle...")
     time.sleep(2)
+    st.video("c6faad01-66db-4275-b246-892dec7a4067")
     st.write("Predicting the Ejection Fraction...")
     time.sleep(1)
     st.write("Assessing Cardiomyopathy...")
@@ -25,7 +26,10 @@ st.success('Done!', icon="✅")
 filelist = pd.read_csv("FileList.csv")
 st.table(filelist)
 
-st.markdone("The Ejection Fraction is: ")
+for i in range(len(filelist)):
+    ef = filelist.values[i][1]
+
+st.info("The Ejection Fraction is: " + ef)
 
 st.button('Rerun')
 
