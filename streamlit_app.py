@@ -16,7 +16,7 @@ with st.status("Calculating the Ejection Fraction..."):
     st.write("Semantically Segmenting the Left-Ventricle...")
     time.sleep(2)
     
-    col1, col2, col3, col4, col5 = st.columns(3)
+    col1, col2, col3, col4, col5 = st.columns(5)
     with col3:
         st.video("c6faad01-66db-4275-b246-892dec7a4067.mp4")
 
