@@ -33,7 +33,7 @@ st.table(filelist)
 for i in range(len(filelist)):
     ef = filelist.values[i][1]
 
-st.metric('The Ejection Fraction is: ', ef\%)
+st.metric('The Ejection Fraction is: ', ef)
 
 if ef > 70:
     st.warning("There is a chance of Hypertrophic Cardiomyopathy or Cardiac Arrest. Please consult your cardiologist.")
