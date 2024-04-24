@@ -29,7 +29,8 @@ st.table(filelist)
 for i in range(len(filelist)):
     ef = filelist.values[i][1]
 
-st.info(f"The Ejection Fraction is: {ef}%")
+strn = str(f"The Ejection Fraction is: {ef}%")
+st.info(strn)
 
 st.button('Rerun')
 
