@@ -26,24 +26,24 @@ if uploaded_files is not None:
         st.write("Assessing Cardiomyopathy...")
         time.sleep(2)
 
-    st.success('Done!', icon="✅")
+        st.success('Done!', icon="✅")
 
-filelist = pd.read_csv("FileList.csv")
-st.table(filelist)
+        filelist = pd.read_csv("FileList.csv")
+        st.table(filelist)
 
-for i in range(len(filelist)):
-    ef = filelist.values[i][1]
+        for i in range(len(filelist)):
+            ef = filelist.values[i][1]
 
-st.metric('The Ejection Fraction is: ', ef)
+        st.metric('The Ejection Fraction is: ', ef)
 
-if ef > 70:
-    st.warning("There is a chance of Hypertrophic Cardiomyopathy or Cardiac Arrest. Please consult your cardiologist.")
-elif 55 <= ef <= 40:
-    st.warning("Heart function below normal.")
-elif ef < 40:
-    st.error("Critical Heart Function! Please consult your cardiologist.")
-else:
-    st.success("Normal Heart Function.")
+        if ef > 70:
+            st.warning("There is a chance of Hypertrophic Cardiomyopathy or Cardiac Arrest. Please consult your cardiologist.")
+        elif 55 <= ef <= 40:
+            st.warning("Heart function below normal.")
+        elif ef < 40:
+            st.error("Critical Heart Function! Please consult your cardiologist.")
+        else:
+            st.success("Normal Heart Function.")
 
 st.button('Rerun')
 
