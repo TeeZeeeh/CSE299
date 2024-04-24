@@ -29,7 +29,7 @@ st.table(filelist)
 for i in range(len(filelist)):
     ef = filelist.values[i][1]
 
-st.info("The Ejection Fraction is: f'{ef}")
+st.info(f"The Ejection Fraction is: {ef}%")
 
 st.button('Rerun')
 
