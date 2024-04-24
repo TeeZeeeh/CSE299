@@ -1,6 +1,7 @@
 import streamlit as st
 import time
 import pandas as pd
+from st_circular_progress import CircularProgress
 
 st.set_page_config(page_title="Echocardiogram Analysis", page_icon="❤️", layout="wide")
 
@@ -33,7 +34,13 @@ st.table(filelist)
 for i in range(len(filelist)):
     ef = filelist.values[i][1]
 
-st.metric('The Ejection Fraction is: ', value=ef)
+import streamlit as st
+from st_circular_progress import CircularProgress
+
+my_circular_progress = CircularProgress(
+    label="The Ejection Fraction",
+    value=ef,
+    key="my_circular_progress").st_circular_progress()
 
 if ef > 70:
     st.warning("There is a chance of Hypertrophic Cardiomyopathy or Cardiac Arrest. Please consult your cardiologist.")
