@@ -15,7 +15,7 @@ with st.status("Calculating the Ejection Fraction..."):
     time.sleep(2)
     st.write("Semantically Segmenting the Left-Ventricle...")
     time.sleep(2)
-    st.video("c6faad01-66db-4275-b246-892dec7a4067")
+    st.video("c6faad01-66db-4275-b246-892dec7a4067.mp4")
     st.write("Predicting the Ejection Fraction...")
     time.sleep(1)
     st.write("Assessing Cardiomyopathy...")
