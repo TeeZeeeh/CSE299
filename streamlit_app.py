@@ -20,7 +20,7 @@ if uploaded_files is not None:
     
         col1, col2, col3, col4, col5 = st.columns(5)
         with col3:
-            st.video("0X1A0A263B22CCD966.mp4")
+            st.video("0X1A58C9DFE12C7953.mp4")
 
         st.write("Predicting the Ejection Fraction...")
         time.sleep(1)
