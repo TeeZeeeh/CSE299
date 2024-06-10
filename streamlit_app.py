@@ -29,7 +29,7 @@ if uploaded_files is not None:
 
         st.success('Done!', icon="✅")
 
-        st.metric('The Ejection Fraction is: 37.26')
+        st.metric('The Ejection Fraction is: ', value=37.36)
         st.error("Critical Heart Function! Please consult your cardiologist.")
 
         '''if ef > 70:
