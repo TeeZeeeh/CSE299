@@ -32,13 +32,4 @@ if uploaded_files is not None:
         st.metric('The Ejection Fraction is: ', value=37.36)
         st.error("Critical Heart Function! Please consult your cardiologist.")
 
-        '''if ef > 70:
-            st.warning("There is a chance of Hypertrophic Cardiomyopathy or Cardiac Arrest. Please consult your cardiologist.")
-        elif 55 <= ef <= 40:
-            st.warning("Heart function below normal.")
-        elif ef < 40:
-            st.error("Critical Heart Function! Please consult your cardiologist.")
-        else:
-            st.success("Normal Heart Function.")'''
-
 st.button('Rerun')
