@@ -20,7 +20,7 @@ if uploaded_files is not None:
     
         col1, col2, col3, col4, col5 = st.columns(5)
         with col3:
-            if uploaded_files = '0X2DC68261CBCC04AE.avi':
+            if uploaded_files == '0X2DC68261CBCC04AE.avi':
                 st.video("0X1A58C9DFE12C7953.mp4")
             elif:
                 st.video("c6faad01-66db-4275-b246-892dec7a4067.mp4")
@@ -32,7 +32,7 @@ if uploaded_files is not None:
 
         st.success('Done!', icon="✅")
 
-        if uploaded_files = '0X2DC68261CBCC04AE.avi':
+        if uploaded_files == '0X2DC68261CBCC04AE.avi':
             st.metric('The Ejection Fraction is: 58.58%')
             st.success("Normal Heart Function.")
 
