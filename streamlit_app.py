@@ -22,7 +22,7 @@ if uploaded_files is not None:
         with col3:
             if uploaded_files == '0X2DC68261CBCC04AE.avi':
                 st.video("0X1A58C9DFE12C7953.mp4")
-            elif:
+            else:
                 st.video("c6faad01-66db-4275-b246-892dec7a4067.mp4")
                 
         st.write("Predicting the Ejection Fraction...")
@@ -36,7 +36,7 @@ if uploaded_files is not None:
             st.metric('The Ejection Fraction is: 58.58%')
             st.success("Normal Heart Function.")
 
-        elif:
+        else:
             st.metric('The Ejection Fraction is: 37.26%')
             st.error("Critical Heart Function! Please consult your cardiologist.")
 
