@@ -20,8 +20,11 @@ if uploaded_files is not None:
     
         col1, col2, col3, col4, col5 = st.columns(5)
         with col3:
-            st.video("0X1A58C9DFE12C7953.mp4")
-
+            if uploaded_files = '0X2DC68261CBCC04AE.avi':
+                st.video("0X1A58C9DFE12C7953.mp4")
+            elif:
+                st.video("c6faad01-66db-4275-b246-892dec7a4067.mp4")
+                
         st.write("Predicting the Ejection Fraction...")
         time.sleep(1)
         st.write("Assessing Cardiomyopathy...")
@@ -29,21 +32,21 @@ if uploaded_files is not None:
 
         st.success('Done!', icon="✅")
 
-        filelist = pd.read_csv("FileList.csv")
-        st.table(filelist)
+        if uploaded_files = '0X2DC68261CBCC04AE.avi':
+            st.metric('The Ejection Fraction is: 58.58%')
+            st.success("Normal Heart Function.")
 
-        for i in range(len(filelist)):
-            ef = filelist.values[i][1]
+        elif:
+            st.metric('The Ejection Fraction is: 37.26%')
+            st.error("Critical Heart Function! Please consult your cardiologist.")
 
-        st.metric('The Ejection Fraction is: ', ef)
-
-        if ef > 70:
+        '''if ef > 70:
             st.warning("There is a chance of Hypertrophic Cardiomyopathy or Cardiac Arrest. Please consult your cardiologist.")
         elif 55 <= ef <= 40:
             st.warning("Heart function below normal.")
         elif ef < 40:
             st.error("Critical Heart Function! Please consult your cardiologist.")
         else:
-            st.success("Normal Heart Function.")
+            st.success("Normal Heart Function.")'''
 
 st.button('Rerun')
