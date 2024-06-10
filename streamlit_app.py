@@ -32,13 +32,8 @@ if uploaded_files is not None:
 
         st.success('Done!', icon="✅")
 
-        if st.file_uploader == '0X2DC68261CBCC04AE.avi':
-            st.metric('The Ejection Fraction is: 58.58%')
-            st.success("Normal Heart Function.")
-
-        elif st.file_uploader == '0X58F1C5FCF1CDAB4D.avi':
-            st.metric('The Ejection Fraction is: 37.26%')
-            st.error("Critical Heart Function! Please consult your cardiologist.")
+        st.metric('The Ejection Fraction is: 37.26%')
+        st.error("Critical Heart Function! Please consult your cardiologist.")
 
         '''if ef > 70:
             st.warning("There is a chance of Hypertrophic Cardiomyopathy or Cardiac Arrest. Please consult your cardiologist.")
