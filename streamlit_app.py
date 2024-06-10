@@ -20,10 +20,7 @@ if uploaded_files is not None:
     
         col1, col2, col3, col4, col5 = st.columns(5)
         with col3:
-            if st.file_uploader == '0X2DC68261CBCC04AE.avi':
-                st.video("0X1A58C9DFE12C7953.mp4")
-            elif st.file_uploader == '0X58F1C5FCF1CDAB4D.avi':
-                st.video("c6faad01-66db-4275-b246-892dec7a4067.mp4")
+            st.video("c6faad01-66db-4275-b246-892dec7a4067.mp4")
                 
         st.write("Predicting the Ejection Fraction...")
         time.sleep(1)
